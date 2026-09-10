@@ -1,0 +1,69 @@
+{
+  "schema_version": 1,
+  "status": "CONFIRMATORY_SCIENTIFIC_ANALYSIS_COMPLETE_AND_FROZEN",
+  "freeze_timestamp_utc": "2026-09-10T17:05:33Z",
+  "external_preregistration": {
+    "registry": "OSF",
+    "url": "https://osf.io/9jrab",
+    "submission_timestamp_as_recorded": "August 19, 2026, 7:06:59 PM",
+    "preregistered_commit": "853eb6aa7c61e03896cdca3eb991fcf8debdc9cc",
+    "preregistered_tag": "confirmatory-preregistered-v1",
+    "preregistered_tag_resolved_commit": "853eb6aa7c61e03896cdca3eb991fcf8debdc9cc"
+  },
+  "protocol": {
+    "final_statistical_analysis_plan": "protocol/final_statistical_analysis_plan.md",
+    "final_confirmatory_protocol": "protocol/final_confirmatory_protocol.md",
+    "final_sampling_plan": "protocol/final_sampling_plan.md",
+    "final_annotation_manual": "protocol/final_annotation_manual.md",
+    "phi_amendment": "protocol/amendment_002_phi_generation_compatibility.md",
+    "statistical_analysis_deviations": 0,
+    "phi_technical_implementation_amendment_remained_in_effect": true
+  },
+  "generation": {
+    "planned_keys": 5040,
+    "usable_responses": 4993,
+    "technical_failures": 47,
+    "usable_by_model": {
+      "Qwen/Qwen2.5-1.5B-Instruct": 1680,
+      "microsoft/Phi-3.5-mini-instruct": 1634,
+      "HuggingFaceTB/SmolLM2-1.7B-Instruct": 1679
+    }
+  },
+  "human_process": {
+    "sample_n": 800,
+    "pre_adjudication_agreement_count": 591,
+    "pre_adjudication_agreement_percent": 73.875,
+    "seven_category_cohens_kappa": 0.5975535492070216,
+    "adjudication_rows": 209,
+    "three_way_consensus_rows": 14,
+    "final_complete_labels": 800,
+    "final_ambiguous_rows": 0
+  },
+  "analysis": {
+    "results_commit": "68d077c96424a7834e9cbc3fd65578b33f904bca",
+    "bootstrap_seed": 2026082207,
+    "bootstrap_replicates_requested": 9999,
+    "bootstrap_replicates_valid_every_main_estimand": 9999,
+    "h1_decision": "REJECT_H1_SUPPORTED",
+    "rq2_status": "ESTIMATION_FOCUSED",
+    "h3_gate_opened": true,
+    "h3_decision": "REJECT"
+  },
+  "sha256": {
+    "prompt_manifest": "b183828691c53bd65965cba0c0959f5b5855bd400714ce1724a7b57e885e32ed",
+    "generation_config": "3ddc4670633ad054403a12275f489869e7af689c5daae175b525f3a302b21284",
+    "usable_response_manifest": "aa543f839be2d489374318ea46d182527d9bd988b07d13284fcc187f1e419f9f",
+    "s0_s2_scores": "e98889194ab841957aa60cf0825543916a63324f710a319f4900b513186e64bf",
+    "master_human_sample": "548253edba237af76373be7ba5064d876a4a76b0f5367a3c5b0e8131477edd6f",
+    "sampling_audit": "5476c6824705d93c8da06b1b06dc3f953aef4019e86b1046043699c0d002157f",
+    "final_human_ground_truth": "20804593269be59b3578fb1e12f033d7b3044895775a21dc2195ca5bb53f11e7",
+    "final_human_binary_outcomes": "10deeafa9f83f21f560649d5c4020e5defe5e51d165739afc4cbc9c3b1f19a9a",
+    "canonical_analysis_dataset": "634f4ef28c68696f8c7681fa83827bb12ab6568c5077e9ddf6c926bfe2bf6a3b",
+    "primary_results": "79d5b0e2675bdc0f454711d1bda7e333a85e64fd9a816f559e998c76758e4545",
+    "bootstrap_results": "61560609974ef2d00fe2266dd557e7930aa561f7e6723e5fe3926d253fe3a9c4",
+    "gee_results": "911e78a28e15a811298d09a65394789fe4cbb9e50746d38d8508b37aac80ff1c",
+    "exploratory_results": "d8d25349149b0371b99bafa2c529b4b6c76f2fbbe5c83d1371263437617536b5",
+    "private_final_freeze_manifest": "4e070cd5287243e4f72efb5f77b524cb3a2e82063d573bb18c0375db29141a41"
+  },
+  "future_work_rule": "Future manuscript edits do not alter frozen scientific results. New analyses after this freeze must be labeled post-hoc/exploratory unless already preregistered."
+}

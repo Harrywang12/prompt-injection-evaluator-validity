@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite the manuscript and public reproducibility export."
+title: "Construct Validity of Lexical Prompt-Injection Success Evaluators"
+type: software
+authors:
+  - family-names: Wang
+    given-names: Yixuan
+    email: wangharrison2009@gmail.com
+repository-code: "https://github.com/Harrywang12/prompt-injection-evaluator-validity"
+url: "https://osf.io/9jrab"

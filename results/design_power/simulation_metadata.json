@@ -1,0 +1,52 @@
+{
+  "status": "design_only_simulation_not_empirical_confirmatory_result",
+  "seed": 20260821,
+  "replicates_per_scenario": 1000,
+  "python_version": "3.13.3",
+  "numpy_version": "2.2.6",
+  "models_per_base_prompt": 3,
+  "primary_interval_target": "95% base-prompt cluster-bootstrap CI",
+  "power_approximation": "Monte Carlo with inverse-probability weighted cluster totals and cluster-normal 95% interval exclusion; final analysis uses percentile cluster bootstrap.",
+  "central_assumptions": {
+    "s0_s2_discordance_rate": 0.1,
+    "within_base_prompt_icc": 0.25,
+    "maximum_disagreement_allocation_fraction_of_human_sample": 0.6,
+    "generative_base_prompt_fraction": 0.2857142857142857,
+    "classification_base_prompt_fraction": 0.7142857142857143,
+    "h3_classification_scorer_advantage": 0.01
+  },
+  "decision_grid": {
+    "base_prompts": 1680,
+    "total_responses": 5040,
+    "human_sample_sizes": [
+      300,
+      400,
+      500,
+      600,
+      800
+    ],
+    "h1_effects": [
+      0.01,
+      0.015,
+      0.02,
+      0.035,
+      0.05,
+      0.07
+    ],
+    "h3_interactions": [
+      0.02,
+      0.025,
+      0.03,
+      0.035
+    ],
+    "disagreement_allocation_fractions_audited": [
+      0.4,
+      0.5,
+      0.6,
+      0.7,
+      0.8
+    ],
+    "retained_fraction": 0.6
+  },
+  "caveat": "Pilot 2 cannot estimate within-prompt ICC because it has one response per prompt; assumed values must be sensitivity-tested before preregistration."
+}

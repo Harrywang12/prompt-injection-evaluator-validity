@@ -1,0 +1,103 @@
+status: preregistration_ready_metadata_only
+resolved_at_utc: "2026-08-19T00:20:00Z"
+resolution_method: public Hugging Face git ls-remote HEAD plus revision metadata API; no weights downloaded
+
+models:
+  - model_id: qwen2_5_1_5b_instruct
+    repository: Qwen/Qwen2.5-1.5B-Instruct
+    repository_url: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct
+    revision_url: https://huggingface.co/Qwen/Qwen2.5-1.5B-Instruct/tree/989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+    revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+    tokenizer_repository: Qwen/Qwen2.5-1.5B-Instruct
+    tokenizer_revision: 989aa7980e4cf806f80c7fef2b1adb7bc71aa306
+    license: Apache-2.0
+    gated: false
+    trust_remote_code: false
+    weight_files:
+      - path: model.safetensors
+        bytes: 3087467144
+    approximate_minimal_repository_bytes: 3098973447
+
+  - model_id: phi3_5_mini_instruct
+    repository: microsoft/Phi-3.5-mini-instruct
+    repository_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct
+    revision_url: https://huggingface.co/microsoft/Phi-3.5-mini-instruct/tree/2fe192450127e6a83f7441aef6e3ca586c338b77
+    revision: 2fe192450127e6a83f7441aef6e3ca586c338b77
+    tokenizer_repository: microsoft/Phi-3.5-mini-instruct
+    tokenizer_revision: 2fe192450127e6a83f7441aef6e3ca586c338b77
+    license: MIT
+    gated: false
+    trust_remote_code: true
+    weight_files:
+      - path: model-00001-of-00002.safetensors
+        bytes: 4972489328
+      - path: model-00002-of-00002.safetensors
+        bytes: 2669692552
+      - path: model.safetensors.index.json
+        bytes: 16331
+    approximate_minimal_repository_bytes: 7644702484
+
+  - model_id: smollm2_1_7b_instruct
+    repository: HuggingFaceTB/SmolLM2-1.7B-Instruct
+    repository_url: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct
+    revision_url: https://huggingface.co/HuggingFaceTB/SmolLM2-1.7B-Instruct/tree/31b70e2e869a7173562077fd711b654946d38674
+    revision: 31b70e2e869a7173562077fd711b654946d38674
+    tokenizer_repository: HuggingFaceTB/SmolLM2-1.7B-Instruct
+    tokenizer_revision: 31b70e2e869a7173562077fd711b654946d38674
+    license: Apache-2.0
+    gated: false
+    trust_remote_code: false
+    weight_files:
+      - path: model.safetensors
+        bytes: 3422777952
+    approximate_minimal_repository_bytes: 3430000000
+
+execution_environment:
+  intended_platform: Google Colab CUDA
+  execution_mode: sequential_one_model_at_a_time
+  required_accelerator: NVIDIA CUDA GPU with bfloat16 support
+  minimum_gpu_vram_gib: 16
+  minimum_system_ram_gib: 32
+  minimum_free_disk_gib: 25
+  dtype: bfloat16
+  attention_implementation: eager
+  exact_successful_runtime_versions: protocol/final_hardware_preflight.md
+  version_freeze_rule: paste the successful Colab runtime versions before external preregistration and record the actual generation runtime without changing study parameters
+  notes:
+    - Load only one model at a time.
+    - Download only the listed safetensors/tokenizer/config files at the frozen revision; exclude ONNX duplicates.
+    - Record CUDA, driver, GPU model, package lock hash, and downloaded file hashes before generation.
+
+design_host_reference_software_2026_08_18:
+  note: these were installed on the insufficient local M3 audit host and are not asserted to be the successful Colab runtime versions
+  python: 3.13.3
+  torch: 2.7.1
+  transformers: 4.52.4
+  numpy: 2.2.6
+  pyyaml: 6.0.2
+
+local_preflight_2026_08_18:
+  host_class: Apple MacBook Air M3
+  system_ram_gib: 16
+  gpu: integrated Apple M3
+  pytorch_mps_available: false
+  free_disk_gib: 0.73
+  result: insufficient_for_study_activation
+  reason: insufficient disk, no available PyTorch accelerator, and insufficient recommended RAM for the frozen three-model run; this does not prevent external preregistration
+
+confirmed_colab_preflight:
+  environment: Google Colab CUDA
+  result: PASS
+  evidence_source: project operator report
+  exact_runtime_values: protocol/final_hardware_preflight.md
+  gpu: Tesla T4
+  cuda_available: true
+  cuda_version: "12.8"
+  pytorch: 2.11.0+cu128
+  transformers: 5.15.0
+  native_bfloat16_supported: true
+  batch_size_1: PASS
+  greedy_generation: PASS
+  max_new_tokens_128: PASS
+  all_pinned_model_and_tokenizer_revisions_loaded: PASS
+  study_material_used: false

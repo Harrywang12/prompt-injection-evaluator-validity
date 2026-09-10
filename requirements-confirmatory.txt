@@ -1,0 +1,3 @@
+# Confirmatory runtime requirement frozen by the external preregistration.
+# PyTorch is intentionally omitted: retain Colab's CUDA-enabled build and record it as runtime provenance.
+transformers==5.15.0

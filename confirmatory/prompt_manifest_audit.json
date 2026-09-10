@@ -1,0 +1,292 @@
+{
+  "bill_sum": {
+    "common_input_token_threshold_inclusive": 8000,
+    "eligible": 3268,
+    "excluded_splits": [
+      "train",
+      "ca_test"
+    ],
+    "repository": "FiscalNote/billsum",
+    "revision": "3d8510441c06a3d9dfb32eb0d7f80151730bcc4f",
+    "selected": 240,
+    "split": "test"
+  },
+  "contains_selected_source_row_ids": false,
+  "contains_source_text": false,
+  "counts_by_target": {
+    "T_EMAIL": 840,
+    "T_WEB": 840
+  },
+  "counts_by_task": {
+    "duplicate_sentence_detection": 256,
+    "grammar_correction": 240,
+    "hate_detection": 256,
+    "natural_language_inference": 176,
+    "sentiment_analysis": 256,
+    "spam_detection": 256,
+    "summarization": 240
+  },
+  "counts_by_task_category": {
+    "closed_label_classification": 1200,
+    "generative_text_transformation": 480
+  },
+  "counts_by_template": {
+    "V1_IMPORTANT_UPDATE": 420,
+    "V2_NEW_INSTRUCTION": 420,
+    "V3_PRIORITY_OVERRIDE": 420,
+    "V4_PROCESSING_NOTE": 420
+  },
+  "expected_generation_keys": 5040,
+  "generation_config_sha256": "3ddc4670633ad054403a12275f489869e7af689c5daae175b525f3a302b21284",
+  "gigaword_active": false,
+  "id_assignment": "C1- plus first 20 uppercase hex characters of the frozen length-framed SHA-256 procedure",
+  "permutation_implementation": "Python random.Random(seed).shuffle over source-row-ID-sorted eligible rows; CPython Mersenne Twister",
+  "preregistered_commit": "853eb6aa7c61e03896cdca3eb991fcf8debdc9cc",
+  "prohibited_exploratory_overlap": 0,
+  "prompt_id_set_sha256": "4447bf72fcf7cb777805dad93672cf2c061e030897cecc206f15658ebb428d7f",
+  "prompt_manifest_sha256": "b183828691c53bd65965cba0c0959f5b5855bd400714ce1724a7b57e885e32ed",
+  "public_safe": true,
+  "sampling_seeds": {
+    "billsum_cell_allocation": 9976436367042203202,
+    "billsum_source_sampling": 12749496974040719988,
+    "cell_allocation_master": 2026082202,
+    "derived_by_task": {
+      "duplicate_sentence_detection": {
+        "cell_allocation": 4003813979518397331,
+        "source_sampling": 3205274187736916963
+      },
+      "grammar_correction": {
+        "cell_allocation": 12808771417459512157,
+        "source_sampling": 1852675367980038503
+      },
+      "hate_detection": {
+        "cell_allocation": 1520816353408716896,
+        "source_sampling": 4834510052950042107
+      },
+      "natural_language_inference": {
+        "cell_allocation": 13539562800294994019,
+        "source_sampling": 2432737398396949395
+      },
+      "sentiment_analysis": {
+        "cell_allocation": 16836119517725544343,
+        "source_sampling": 10844556591960012850
+      },
+      "spam_detection": {
+        "cell_allocation": 14191710191207670630,
+        "source_sampling": 3941834396784271111
+      },
+      "summarization": {
+        "cell_allocation": 9976436367042203202,
+        "source_sampling": 12749496974040719988
+      }
+    },
+    "source_sampling_master": 2026082201
+  },
+  "schema_version": "confirmatory-prompt-manifest-audit-v1",
+  "source_population_audit": {
+    "duplicate_sentence_detection": {
+      "eligible": 307,
+      "exclusions": {
+        "context_length": 0,
+        "exploratory_source_id_overlap": 101
+      },
+      "selected": 256,
+      "source_population": 408
+    },
+    "grammar_correction": {
+      "eligible": 646,
+      "exclusions": {
+        "context_length": 0,
+        "exploratory_source_id_overlap": 101,
+        "missing_required": 1
+      },
+      "selected": 240,
+      "source_population": 748
+    },
+    "hate_detection": {
+      "eligible": 24679,
+      "exclusions": {
+        "context_length": 0,
+        "duplicate": 1,
+        "exploratory_source_id_overlap": 103
+      },
+      "selected": 256,
+      "source_population": 24783
+    },
+    "natural_language_inference": {
+      "eligible": 178,
+      "exclusions": {
+        "context_length": 0,
+        "exploratory_source_id_overlap": 99
+      },
+      "selected": 176,
+      "source_population": 277
+    },
+    "sentiment_analysis": {
+      "eligible": 770,
+      "exclusions": {
+        "context_length": 0,
+        "exploratory_source_id_overlap": 102
+      },
+      "selected": 256,
+      "source_population": 872
+    },
+    "spam_detection": {
+      "eligible": 5058,
+      "exclusions": {
+        "context_length": 0,
+        "duplicate": 414,
+        "exploratory_content_overlap": 7,
+        "exploratory_source_id_overlap": 95
+      },
+      "selected": 256,
+      "source_population": 5574
+    },
+    "summarization": {
+      "eligible": 3268,
+      "exclusions": {
+        "context_length": 1
+      },
+      "selected": 240,
+      "source_population": 3269
+    }
+  },
+  "source_revisions": {
+    "duplicate_sentence_detection": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "grammar_correction": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "hate_detection": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "natural_language_inference": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "sentiment_analysis": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "spam_detection": "19bf570084c82e663d722d1e2ebbdf4395b837c3",
+    "summarization": "3d8510441c06a3d9dfb32eb0d7f80151730bcc4f"
+  },
+  "task_template_target_counts": {
+    "duplicate_sentence_detection": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      }
+    },
+    "grammar_correction": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      }
+    },
+    "hate_detection": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      }
+    },
+    "natural_language_inference": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 22,
+        "T_WEB": 22
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 22,
+        "T_WEB": 22
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 22,
+        "T_WEB": 22
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 22,
+        "T_WEB": 22
+      }
+    },
+    "sentiment_analysis": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      }
+    },
+    "spam_detection": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 32,
+        "T_WEB": 32
+      }
+    },
+    "summarization": {
+      "V1_IMPORTANT_UPDATE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V2_NEW_INSTRUCTION": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V3_PRIORITY_OVERRIDE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      },
+      "V4_PROCESSING_NOTE": {
+        "T_EMAIL": 30,
+        "T_WEB": 30
+      }
+    }
+  },
+  "total_prompts": 1680
+}

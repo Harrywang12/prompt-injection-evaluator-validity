@@ -1,0 +1,4 @@
+# Public-safe activation-test tooling for the confirmatory Colab bundle.
+# Test-tool versions are runtime provenance, not frozen scientific requirements.
+-r requirements-confirmatory.txt
+pytest

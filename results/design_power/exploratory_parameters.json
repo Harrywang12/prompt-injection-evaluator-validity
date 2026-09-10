@@ -1,0 +1,142 @@
+{
+  "status": "design_only_exploratory_inputs_not_confirmatory_truth",
+  "input_hashes": {
+    "population": "7ae8588cb5e2ce2cf607137c71f837589a5922d43857c60c708ab1a1eadcd361",
+    "scorers": "59df93b541dbe02ab17483aa85a07bfc79dcc0f80f30c8cf33cfe9093cce8c11",
+    "annotations": "5f6619cc5af82a30d9cf9bf32bcb90d68f9d0668b0b1e44d2cffb5c872a24b18",
+    "human_internal": "74e1054d632a27288a881db56e7bd56769ce25b6813fbeac802b9d069c3445e2"
+  },
+  "candidate_responses": 672,
+  "independent_base_attack_prompts": 672,
+  "responses_per_base_prompt": {
+    "minimum": 1,
+    "maximum": 1,
+    "mean": 1.0
+  },
+  "victim_models": [
+    "Qwen/Qwen2.5-1.5B-Instruct"
+  ],
+  "s0_s2_discordance": {
+    "count": 10,
+    "denominator": 672,
+    "frequency": 0.01488095238095238
+  },
+  "human_sample": {
+    "n": 100,
+    "strict_correctness_table": {
+      "both_incorrect": 4,
+      "s0_only_correct": 0,
+      "s2_only_correct": 7,
+      "both_correct": 89
+    },
+    "lenient_correctness_table": {
+      "both_incorrect": 1,
+      "s0_only_correct": 3,
+      "s2_only_correct": 4,
+      "both_correct": 92
+    },
+    "d_strict_raw": 0.07,
+    "d_lenient_raw": 0.01,
+    "interaction_definition_raw": 0.060000000000000005,
+    "d_strict_original_ipw": 0.017500000000000005,
+    "d_lenient_original_ipw": 0.002500000000000001,
+    "interaction_definition_original_ipw": 0.015000000000000005,
+    "d_strict_joint_cell_calibrated": 0.01488095238095238,
+    "d_lenient_joint_cell_calibrated": 0.002125850340136054,
+    "interaction_definition_joint_cell_calibrated": 0.012755102040816327
+  },
+  "task_category_estimates": {
+    "generative": {
+      "candidate_n": 192,
+      "human_n": 40,
+      "candidate_discordances": 10,
+      "strict_correctness_table": {
+        "both_incorrect": 1,
+        "s0_only_correct": 0,
+        "s2_only_correct": 7,
+        "both_correct": 32
+      },
+      "lenient_correctness_table": {
+        "both_incorrect": 1,
+        "s0_only_correct": 3,
+        "s2_only_correct": 4,
+        "both_correct": 32
+      },
+      "d_strict_raw": 0.175,
+      "d_lenient_raw": 0.025,
+      "interaction_definition_raw": 0.15,
+      "d_strict_joint_cell_calibrated": 0.052083333333333336,
+      "d_lenient_joint_cell_calibrated": 0.00744047619047619
+    },
+    "classification": {
+      "candidate_n": 480,
+      "human_n": 60,
+      "candidate_discordances": 0,
+      "strict_correctness_table": {
+        "both_incorrect": 3,
+        "s0_only_correct": 0,
+        "s2_only_correct": 0,
+        "both_correct": 57
+      },
+      "lenient_correctness_table": {
+        "both_incorrect": 0,
+        "s0_only_correct": 0,
+        "s2_only_correct": 0,
+        "both_correct": 60
+      },
+      "d_strict_raw": 0.0,
+      "d_lenient_raw": 0.0,
+      "interaction_definition_raw": 0.0,
+      "d_strict_joint_cell_calibrated": 0.0,
+      "d_lenient_joint_cell_calibrated": 0.0
+    }
+  },
+  "h3_interaction_strict_raw": 0.175,
+  "h3_interaction_strict_joint_cell_calibrated": 0.052083333333333336,
+  "candidate_distribution": {
+    "task": {
+      "duplicate_sentence_detection": 96,
+      "grammar_correction": 96,
+      "hate_detection": 96,
+      "natural_language_inference": 96,
+      "sentiment_analysis": 96,
+      "spam_detection": 96,
+      "summarization": 96
+    },
+    "injection_variant_id": {
+      "V1_IMPORTANT_UPDATE": 168,
+      "V2_NEW_INSTRUCTION": 168,
+      "V3_PRIORITY_OVERRIDE": 168,
+      "V4_PROCESSING_NOTE": 168
+    },
+    "target_id": {
+      "T_EMAIL": 336,
+      "T_WEB": 336
+    }
+  },
+  "human_distribution": {
+    "task": {
+      "duplicate_sentence_detection": 11,
+      "grammar_correction": 19,
+      "hate_detection": 20,
+      "natural_language_inference": 5,
+      "sentiment_analysis": 7,
+      "spam_detection": 17,
+      "summarization": 21
+    },
+    "injection_variant_id": {
+      "V1_IMPORTANT_UPDATE": 21,
+      "V2_NEW_INSTRUCTION": 23,
+      "V3_PRIORITY_OVERRIDE": 16,
+      "V4_PROCESSING_NOTE": 40
+    },
+    "target_id": {
+      "T_EMAIL": 40,
+      "T_WEB": 60
+    }
+  },
+  "within_prompt_clustering": {
+    "estimable": false,
+    "reason": "Pilot 2 has one victim response per unique base-prompt hash, so no within-prompt replication exists."
+  }
+}
