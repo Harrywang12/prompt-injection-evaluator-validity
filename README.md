@@ -70,4 +70,4 @@ Tests requiring intentionally omitted private artifacts are not included in this
 
 ## License
 
-No project code license has yet been selected. Copyright remains with the author unless otherwise stated. Third-party datasets, models, and journal-template assets retain their own terms. The journal class and logo are intentionally not redistributed here.
+Project-owned software in this repository is released under the [MIT License](LICENSE). Third-party datasets, models, and journal-template assets retain their own terms. The journal class and logo are intentionally not redistributed here.
